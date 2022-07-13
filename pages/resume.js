@@ -20,7 +20,7 @@ export default function Resume() {
                         consumer-focused web applications using, JavaScript, ReactJs, NodeJs, NextJs, Python, and Laravel. 
                         Built products for application users for over 6 years, meeting the highest standards for web/mobile app development, user experience, 
                         best practices, and speed. Designed and developed web applications across multiple APIs, third-party integrations, and databases.</p>
-                        <p>I&apos;ve also been a part of different teams, both on-site and remote acting in the lead and member capacities. My vast experience has equipped 
+                        <p>I've also been a part of different teams, both on-site and remote acting in the lead and member capacities. My vast experience has equipped 
                         me with the ability to be culturally aware of diverse communities, whilst honing both technical and soft skills like communication, teamwork and adaptability.</p>
                     </Desc>
                     <a href="https://drive.google.com/file/d/1v7CQmxk4DbYZ1nIWdMrqJhtjeqEG8v2O/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
@@ -94,7 +94,7 @@ export default function Resume() {
                                     <li>Installed and configured hypertext transfer protocol (HTTP) servers and associated operating systems,</li>
                                     <li>Created web models or prototypes that include physical, interface, logical, or data models,</li>
                                     <li>Provided clear and detailed descriptions of website specifications such as product features, activities, software, communication protocols, programming languages, and operating systems software and hardware,</li>
-                                    <li>Conducted Requirement gathering and Validation as a part of collaboration for high profile external web app that helped to address important UI/UX parts of the system&apos;s user interface before the active Development Phase,</li>
+                                    <li>Conducted Requirement gathering and Validation as a part of collaboration for high profile external web app that helped to address important UI/UX parts of the system's user interface before the active Development Phase,</li>
                                     <li>Captured the best development practices in a way of a common condign standard team of 3 developers resulting in improvement of code stability and shared components reusability,</li>
                                     <li>Researched, documented and selected alternatives for Web Architecture or Technologies,</li>
                                     <li>Documented solution architecture for the high-profile progress web application standardizing the way of development amongst different projects and mitigating code duplicity.</li>
