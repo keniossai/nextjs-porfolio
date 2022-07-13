@@ -1,54 +1,34 @@
 import React, { useState } from 'react'
-import { Nav, HeaderItems, Link, HamBurger, HamBurgerIcon, Menu, NavPrimary, MenuContent, MenuTitle, NavSecondary, MenuLinks, MenuItem } from './Headerstyles'
-import {HiOutlineMenuAlt4} from 'react-icons/hi'
-// import { Link } from 'react-router-dom'
+import { Nav, NavbarContainer, Links, MobileIcon, NavItem, NavLinks, NavMenu} from './Headerstyles'
+import {FaBars} from 'react-icons/fa'
+import Link from 'next/link'
 
-const  Header = () => {
-  const [show, setShow] = useState(false)
-
+const  Header = ({toggle}) => {
   
     return (
       <Nav>
-        <HeaderItems>
-            <Link>
-                <span className='svg'>K</span> <span className='ossai'>OSSAI</span>
-            </Link>
-            <HamBurger onClick={()=>setShow(true)}>
-                {/* <HiOutlineMenuAlt4 onClick={()=>setShow(true)} className='icon' /> */}
-                <HamBurgerIcon >
-
-                </HamBurgerIcon>
-            </HamBurger>
-        </HeaderItems>
-        {
-          show ? <Menu onClick={()=>setShow(false)} className='menu'>
-          <NavPrimary>
-            <MenuContent>
-                <MenuTitle>Menu</MenuTitle>
-                <MenuLinks>
-                  <MenuItem data-text="Home">
-                    <a href="">Home</a>
-                  </MenuItem>
-                  <MenuItem data-text="About Me">
-                    <a href="">About Me</a>
-                  </MenuItem>
-                  <MenuItem data-text="Contact">
-                    <a href="">Contact</a>
-                  </MenuItem>
-                  <MenuItem data-text="GitHub">
-                    <a href="">GitHub</a>
-                  </MenuItem>
-                  <MenuItem data-text="LinkedIn">
-                    <a href="">LinkedIn</a>
-                  </MenuItem>
-                </MenuLinks>
-            </MenuContent>
-          </NavPrimary>
-          <NavSecondary>
-
-          </NavSecondary>
-        </Menu> : null
-        }
+              <Link href="/">
+                <Links>
+                    <span className='svg'>K</span> <span className='ossai'>OSSAI</span>
+                </Links>
+              </Link>
+                <MobileIcon onClick={toggle}>
+                    <FaBars className='icon' />
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <Link href='/resume'>Resume</Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link href='/service'>Contact</Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link href=''>GitHub</Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link href=''>LinkedIn</Link>
+                    </NavItem>
+                </NavMenu>
       </Nav>
     )
 }

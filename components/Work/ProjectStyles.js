@@ -49,7 +49,7 @@ export const LinkDiv = styled.div`
 `
 
 export const Link = styled.a`
-    background: #dbb635;
+    background: #6F36C2;
     margin-top: 130px;
     height: 710px;
     position: relative;
@@ -68,7 +68,7 @@ export const Link = styled.a`
 
 
 `
-export const Link2 = styled.a`
+export const BlueContainer = styled.a`
     background: #2a6ef0;
     /* margin-top: 130px; */
     height: 710px;
@@ -83,6 +83,41 @@ export const Link2 = styled.a`
         padding-left: 10px;
     }
 `
+export const DarkblueContainer = styled.a`
+    background: #0e76a8;
+    /* margin-top: 130px; */
+    height: 710px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 425px){
+        height: 470px;
+        padding-left: 10px;
+    }
+`
+export const RedContainer = styled.a`
+    background: #e83151;
+    margin-top: -130px;
+    height: 710px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 425px){
+        height: 470px;
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width: 968px){
+        margin-top: 0;
+    }
+`
+
 
 export const  BoxContent = styled.div`
     padding: 40px 20px 20px;
@@ -129,14 +164,14 @@ export const BoxTitleLink = styled.div`
 `
 
 export const BoxImage = styled.div`
-    margin-top: -15px;
+    /* margin-top: -15px; */
     position: relative;
     left: -70px;
     width: 108%;
-    height: 100%;
-    background: url(https://res.cloudinary.com/dmwfd0zhh/image/upload/v1610400368/Portfolio/image_1_bqs9wv.jpg) no-repeat;
-    background-size: auto;
-    background-size: contain;
+    /* height: 109%; */
+    /* background: url('../public/imt.png') no-repeat; */
+    /* background-size: auto; */
+    /* background-size: contain; */
     transition: transform .2s linear,-webkit-transform .2s linear;
 
     ::after{
@@ -196,6 +231,14 @@ export const More = styled.button`
         width: 100%;
         left: 0;
         right: unset;
+    }
+
+    @media screen and (max-width: 986px){
+        position: relative;
+        left: unset;
+        right: unset;
+        display: block;
+        margin: 60px auto 0;
     }
 `
 

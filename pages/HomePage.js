@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Landing, Section, Sub, LandingMain, TextCon, LinkDiv, Link, Dash, SideScroll, Project, LandingMain2 } from './HomeStyles'
-import Portfolio from '../Work/Portfolio'
-import Find from '../Work/Findme/Find'
-import Contact from '../Contact/Contact'
-import { Footer } from '../Footer/Footer'
+import styled from 'styled-components'
+import Contact from '../components/Contact/Contact'
+import { Footer } from '../components/Footer/Footer'
+import Portfolio from '../components/Work/Portfolio'
+
 
 export default class HomePage extends Component {
   render() {
@@ -75,10 +75,104 @@ export default class HomePage extends Component {
             </SideScroll>
         </Section>
         <Portfolio />
-        <Find />
         <Contact />
-        <Footer />
       </Landing>
     )
   }
 }
+
+
+
+
+const Landing = styled.div`
+    position: relative;
+    background: #0b0b0f;
+    color: #fff;
+    z-index: 2;
+    height: unset;
+    overflow: hidden;
+`
+
+const Section = styled.section`
+    padding: 180px 100px 160px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
+    font-family: "Manrope",sans-serif;
+
+    @media screen and (max-width: 400px){
+        padding: 180px 50px 80px;
+        text-align: left;
+    }
+`
+
+const Sub = styled.div`
+    transform: translate(0px);
+    opacity: 1;
+    font-size: 14px;
+    color: #868f97;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    @media screen and (max-width: 763px){
+        /* text-align: left; */
+    }
+`
+
+const LandingMain = styled.h1`
+    font-size: 75px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+
+    @media screen and (max-width: 670px){
+        display: none;
+    }
+`
+const LandingMain2 = styled.h1`
+    display: none;
+    font-weight: 800;
+    @media screen and (max-width: 670px){
+        display: block;
+        font-size: 40px;
+    }
+`
+
+const TextCon = styled.span`
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: pre;
+
+    .text{
+        opacity: 1;
+        transform: translate(0px);
+    }
+`
+const LinkDiv = styled.div`
+    font-weight: 800;
+`
+
+const Link = styled.a`
+    opacity: 1;
+    color: #0E76A8;
+    text-decoration: none;
+`
+
+const Project = styled.span`
+    margin-left: 10px;
+    opacity: 1;
+    color: #FF3562;
+`
+const Dash = styled.span`
+    opacity: 1;
+    margin-left: 10px;
+`
+const SideScroll = styled.div`
+    display: inline;
+    position: absolute;
+    left: 30px;
+`
